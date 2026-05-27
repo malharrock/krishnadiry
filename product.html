@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Krishna  Dairy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+     <!-- Favicon -->
+     <link href="images/Aniket.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <style>
+       .whatsapp_float {
+     position: fixed;
+     width: 60px;
+     height: 60px;
+     bottom: 40px;
+     right: 40px;
+     background-color: #25d366;
+     color: #fff;
+     border-radius: 50px;
+     text-align: center;
+     font-size: 30px;
+     box-shadow: 2px 2px 3px #999;
+     z-index: 100;
+   }
+   .whatsapp-icon {
+     margin-top: 16px;
+   }
+
+   /* for mobile */
+   @media screen and (max-width: 767px){
+     .whatsapp-icon {
+       margin-top: 10px;
+     }
+     .whatsapp_float {
+       width: 40px;
+       height: 40px;
+       bottom: 20px;
+       right: 10px;
+       font-size: 22px;
+  }
+   }
+   /*call btn*/
+   .floating-button {
+   position:fixed;
+   bottom: 20px;
+   left: 20px;
+   background-color: #007bff;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 50px;
+   text-decoration: none;
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+   display: block;
+   }
+   
+   .floating-button:hover {
+   background-color: #0056b3;
+   }
+   .floating-button {
+   /* existing styles */
+   transition: transform 0.3s ease-out;
+   }
+   
+   .floating-button:hover {
+   transform: translateY(-10px);
+   }
+    </style>
+   
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+   <!-- Navbar Start -->
+   <nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top py-0 px-0 ms-auto p-0 p-lg-0 w-0" style="">
+    <img src="images/krishna dairy (10).png" alt="" width="150px" height="110px"style="top: 10%;" style="left:0%;" style="margin: 0px;" style="padding: 0px;">
+
+        <button type="button" class="navbar-toggler " data-bs-toggle="collapse" data-bs-target="#navbarCollapse" class="bg-light">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class=" bg-light navbar-nav  py-3 px-5 ms-auto p-4 p-lg-0 w-0">
+               &nbsp;&nbsp;<a href="index.html" class="nav-item nav-link active"><i class="fa-solid fa-house-user" style="color: #0f25d2;"></i>&nbsp;Home</a>
+                <a href="about.html" class="nav-item nav-link"><i class="fa-regular fa-address-card" style="color: #3310e2;"></i>&nbsp;About</a>
+               <div class="nav-item dropdown">
+                    <a href="product.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-cubes-stacked fa-lg" style="color: #1b0bf4;"></i>&nbsp;Product</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="product.html" class="dropdown-item">Milk Products</a>
+                        <a href="document2.html" class="dropdown-item">Sweets Products</a>
+                        <a href="otherpro.html" class="dropdown-item">other Products</a>
+                        
+                    </div>
+                </div>
+
+
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><i class="fa-solid fa-file-lines fa-lg" style="color: #270fdb;"></i>&nbsp;Blogs</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="service.html" class="dropdown-item">Services</a>
+                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                    </div>
+                </div>
+                <a href="career .html" class="nav-item nav-link"><i class="fa-solid fa-briefcase fa-lg" style="color: #1039da;"></i>&nbsp;Career</a>
+                <a href="contact.html" class="nav-item nav-link"><i class="fa-solid fa-phone fa-lg" style="color: #2408f7;"></i>&nbsp;Contact</a>
+            </div>
+            &nbsp;&nbsp;
+            <div class="border-start ps-4 d-none d-lg-block">
+                <a class="btn btn-secondary rounded-pill py-3 px-5" href="orderpage.html">Order Now</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Page Header End -->
+
+
+    <!-- Product Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <h1 class="mb-5">Krisha  Dairy Products For Healthy Living</h1>
+            </div>
+            <div class="row gx-4">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/1.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Fresh Milk</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/2.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Kadhi Dahi</a>
+                           <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>--> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/3.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Double Toned Mlik</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="images/4.jpg" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Amrut Dahi</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+
+
+    <!-- Product new  -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <h1 class="mb-5">Krisha  Dairy Products For Healthy Living</h1>
+            </div>
+            <div class="row gx-4">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Paneer</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Evaporated Milk</a>
+                           <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>--> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Double Toned Mlik</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Curd</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---product end -->
+    <!---new products start-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="section-title bg-white text-center text-primary px-3">Our Products</p>
+                <h1 class="mb-5">Krisha  Dairy Products For Healthy Living</h1>
+            </div>
+            <div class="row gx-4">
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Pure Milk</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">traditional yogurt</a>
+                           <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>--> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Double Toned Mlik</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="product-item">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="" alt="">
+                            <div class="product-overlay">
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href=""><i class="bi bi-link"></i></a>
+                                <a class="btn btn-square btn-secondary rounded-circle m-1" href="orderpage.html"><i class="fa-solid fa-down-long"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <a class="d-block h5" href="">Curd</a>
+                            <!--<span class="text-primary me-1">$19.00</span>
+                            <span class="text-decoration-line-through">$29.00</span>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product End -->
+    
+    <!---new end-->
+        <!--whatsapp-->
+        <a href="https:/wa.me/7448084306" target="_blank" class="whatsapp_float">
+            <i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+            <!--call btn-->
+      <!--calll bbtn-->
+      <a href="tel:+91-9822930187
+      " class="floating-button">Call Now</a>
+      <!--button end-->
+
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title bg-white text-start text-primary pe-3">Why Us!</p>
+                    <h1 class="mb-4">Few Reasons Why People Choosing Us!</h1>
+                    <p class="mb-4">Customers may choose a milk dairy known for its commitment to quality, ensuring that the milk and dairy products they provide are fresh, wholesome, and free from contaminants.</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Quality Product</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Fresh Product</p>
+                    <p><i class="fa fa-check text-primary me-3"></i>Organic Product</p>
+                    <a class="btn btn-secondary rounded-pill py-3 px-5 mt-3" href="">Explore More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="rounded overflow-hidden">
+                        <div class="row g-0">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/experience.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">17</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Years Experience</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/award.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">49</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Award Winning</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="text-center bg-secondary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/animal.png" alt="">
+                                    <h1 class="display-6" data-toggle="counter-up">30</h1>
+                                    <span class="fs-5 fw-semi-bold text-primary">Total Animals</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="text-center bg-primary py-5 px-4">
+                                    <img class="img-fluid mb-4" src="img/client.png" alt="">
+                                    <h1 class="display-6 text-white" data-toggle="counter-up">61940</h1>
+                                    <span class="fs-5 fw-semi-bold text-secondary">Happy Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Outlet</h5>
+                    <p class="mb-1">Monday - Sunday</p>
+                    <h6 class="text-light">07:00 am - 9:00 pm</h6>
+                    <p class="mb-2"><i class="fa-solid fa-square-check"></i> &nbsp;<i class="fa fa-map-marker-alt me-3"></i>Krishna Dairy Jaitala:-428J +45R, Jaitala Road, Keshav Madhav Nagar, Prasad Nagar, Nagpur - 440036.</p>
+                    <p class="mb-2"><i class="fa-solid fa-square-check"></i> &nbsp;<i class="fa fa-map-marker-alt me-3"></i>Krishna Dairy Gopal Nagar:-Last Bustop Gopal Nagar, Pratham Apartment, Opp. Healthcare Pharmacy, Nagpur - 440022.</p>
+                    
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://www.facebook.com/profile.php?id=61559680762815"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://www.instagram.com/krishnadairy_ngp/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Sunday</p>
+                    <h6 class="text-light">07:00 am - 9:00 pm</h6>
+                    <!--<p class="mb-1">Sunday</p>
+                    <h6 class="text-light">Closed</h6>--><br><br>
+                    <h5 class="text-white mb-4">Our Corporate Office</h5>
+                    <p class="mb-2"><i class="fa-solid fa-square-check"></i> &nbsp;<i class="fa fa-map-marker-alt me-3"></i>13/A shree murtee apartment Sarswati vihar trimurti nagar, behind bhange garden, Nagpur, Maharashtra 440022</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Outlet </h5>
+                    <p class="mb-1">Monday - Sunday</p>
+                    <h6 class="text-light">07:00 am - 9:00 pm</h6>
+                    <p class="mb-2"><i class="fa-solid fa-square-check"></i> &nbsp;<i class="fa fa-map-marker-alt me-3"></i>Krishna Dairy Zingabai Nagar:53VC + F48, Godhani Road, Near Medplus Pharmacy, Zingabai, Nagpur - 441203.</p>
+                    <p class="mb-2"><i class="fa-solid fa-square-check"></i> &nbsp;<i class="fa fa-map-marker-alt me-3"></i>Krishna Dairy Manish Nagar:-Plot No/77, Beltarodi Roadm Manish Nagar T Poin, Opp. HDFC Bank, Nagpur - 440015.</p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://www.instagram.com/krishnadairy_ngp/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- Footer End -->
+ <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold" href="#">Krishna Dairy 2024</a>, All Right Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="fw-semi-bold" href="https://www.instagram.com/milestonetechnologiesnagpur/">
+                        Milestone Technologies Nagpur</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

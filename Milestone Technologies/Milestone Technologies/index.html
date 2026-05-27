@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Milestone Technologies</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="/images/milestone2.png" rel="icon">
+    <link rel="icon" href="/images/Milestone Done.png" type="image/icon type">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--whatasapp-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!---icon link Ajax-->
+    
+
+    <style>
+       .floating-button {
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    }
+    
+    .floating-button:hover {
+    background-color: #0056b3;
+    }
+    .floating-button {
+    /* existing styles */
+    transition: transform 0.3s ease-out;
+    }
+    
+    .floating-button:hover {
+    transform: translateY(-10px);
+    }
+    /*Slider Strat*/
+    .slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    background:white;
+    border-radius: 30px;
+    box-shadow: transparent;
+    backdrop-filter: blur(7.4px);
+    -webkit-backdrop-filter: blur(7.4px);
+    border:transparent;
+}
+
+.slider-items {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap: 20px;
+    animation: scrolling 15s linear infinite;
+
+}
+
+@keyframes scrolling {
+
+    0% {
+        transform: translateX(80%);
+    }
+
+    100% {
+        transform: translateX(-20%);
+    }
+}
+
+.slider-items img {
+    width: 12%;
+    height: 100px;
+    margin: 20px;
+    border: black;
+    border-color: black;
+    }
+
+.slider-items img:hover {
+    transform: scale(1.3);
+
+}
+ </style>
+ <style>
+    .our-team{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.our-team img{
+    width: 100%;
+    height: auto;
+}
+.our-team .team-content{
+    width: 100%;
+    background:  #8F12FD;
+    color: #fff;
+    padding: 15px 0 10px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.our-team:hover .team-content{
+    padding-bottom: 40px;
+}
+.our-team .team-content:before,
+.our-team .team-content:after{
+    content: "";
+    width: 60%;
+    height: 38px;
+    background:  #8F12FD;
+    position: absolute;
+    top: -18px;
+    transform: rotate(15deg);
+    z-index: -1;
+}
+.our-team .team-content:before{
+    left: -3%;
+}
+.our-team .team-content:after{
+    right: -3%;
+    transform: rotate(-15deg);
+}
+.our-team .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 7px 0;
+    position: relative;
+}
+.our-team .title:before,
+.our-team .title:after{
+    content: "";
+    width: 7px;
+    height: 93px;
+    background: #ff5543;
+    position: absolute;
+    top: -78px;
+    z-index: -2;
+    transform: rotate(-74deg);
+}
+.our-team .title:before{
+    left: 32%;
+}
+.our-team .title:after{
+    right: 32%;
+    transform: rotate(74deg);
+}
+.our-team .post{
+    display: block;
+    font-size: 13px;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.our-team .social-links{
+    list-style: none;
+    padding: 0 0 15px 0;
+    margin: 0;
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    left: 0;
+    transition: all 0.5s ease 0s;
+}
+.our-team:hover .social-links{
+    bottom: 0;
+}
+.our-team .social-links li{
+    display: inline-block;
+}
+.our-team .social-links li a{
+    display: block;
+    font-size: 16px;
+    color: #aad6e1;
+    margin-right: 6px;
+    transition: all 0.5s ease 0s;
+}
+.our-team .social-links li:last-child a{
+    margin-right: 0;
+}
+.our-team .social-links li a:hover{
+    color: #ff5543;
+}
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
+    .our-team .team-content:before,
+    .our-team .team-content:after{
+        height: 50px;
+        top: -24px;
+    }
+    .our-team .title:before,
+    .our-team .title:after{
+        top: -85px;
+        height: 102px;
+    }
+    .our-team .title:before{
+        left: 35%;
+    }
+    .our-team .title:after{
+        right: 35%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .our-team .team-content:before,
+    .our-team .team-content:after{
+        height: 75px;
+    }
+    .our-team .team-content:before{
+        transform: rotate(8deg);
+    }
+    .our-team .team-content:after{
+        transform: rotate(-8deg);
+    }
+    .our-team .title:before,
+    .our-team .title:after{
+        width: 10px;
+        top: -78px;
+        height: 102px;
+    }
+    .our-team .title:before{
+        left: 42.5%;
+        transform: rotate(-82deg);
+    }
+    .our-team .title:after{
+        right: 42.5%;
+        transform: rotate(82deg);
+    }
+}
+@media only screen and (max-width: 480px){
+    .our-team .title:before,
+    .our-team .title:after{
+        top: -83px;
+    }
+}
+ </style>
+ <style>
+    #navbar{
+  background-color:white;
+  font-family: 'Roboto', sans-serif;
+  padding: 0%;
+}
+#logo img{
+  border-radius: 10px;
+  width: 90px;
+  height: 90%;
+  margin-left: 40px;
+}
+.navbar-nav{
+  margin-left: 50px;
+}
+.nav-item .nav-link{
+  color: black;
+  margin-left: 80px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+  background:rgb(83, 83, 255);
+  border-radius: 5px;
+  color: black;
+}
+#navbar form button{
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+ </style>
+ <style>
+    .whatsapp_float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+    .whatsapp-icon {
+      margin-top: 16px;
+    }
+
+    /* for mobile */
+    @media screen and (max-width: 767px){
+      .whatsapp-icon {
+        margin-top: 10px;
+      }
+      .whatsapp_float {
+        width: 40px;
+        height: 40px;
+        bottom: 20px;
+        right: 10px;
+        font-size: 22px;
+   }
+    }
+    /*call btn*/
+    .floating-button {
+    position:fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    }
+    
+    .floating-button:hover {
+    background-color: #0056b3;
+    }
+    .floating-button {
+    /* existing styles */
+    transition: transform 0.3s ease-out;
+    }
+    
+    .floating-button:hover {
+    transform: translateY(-10px);
+    }
+
+ </style>
+ <style>
+    .container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
+
+.card:hover{
+    width: 350px;
+}
+
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 150%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(../images/bg1.jpg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(../images/bg2.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(../images/bg3.jpg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #A6359D;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+.card .description input:hover{
+    background: #83277b;
+}
+ </style>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+ <!-- Preloader -->
+
+
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+        
+        <!--calll bbtn-->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#" id="logo"><img src="img/mile.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: black; font-size: 23px;"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#feature">Feature</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#service">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#review">Teams</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blogs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                 </ul>
+                <!--<form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>-->
+              </div>
+            </div>
+          </nav>
+          
+
+       
+
+   <!---- Hidden Open / Close Toggles ---->
+   
+   
+
+   
+<!---- END Main Navigation ---->
+        <div class="container-xxl position-relative p-0" id="home">
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5">
+                        <div class="col-lg-8 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Dive Into The Digital Marketing World With Milestone Technologies Agency Nagpur</h1>
+                            <p class="text-white pb-3 animated slideInDown">Digital marketing encompasses all marketing efforts that use 
+                                electronic devices or the internet.Google my Buisness , Google ADS, & Google Maps  leverage digital channels such as search engines,
+                                 social media, email, and other websites to connect with current and prospective customers. 
+                                Here are some key components of digital marketing</p>
+                            <a href="./about2.html" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">Read More</a>
+                            <a href="contact.html" class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Contact Us</a>
+                        </div>
+                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="owl-carousel screenshot-carousel">
+                                <img class="img-fluid" src="https://cdn.dribbble.com/users/729829/screenshots/1986645/gif.gif" alt="">
+                                <img class="img-fluid" src="https://paradox.ba/paradox/wp-content/uploads/2019/10/4paradox-animation-min.gif" alt="">
+                                <img class="img-fluid" src="https://media3.giphy.com/media/oVCd7vRf5U8vQ8o2NP/giphy.gif?cid=6c09b952m6x31wfdh83rm6ghagrx88npq7ekkjxyus9xadfe&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="">
+                                <img class="img-fluid" src="https://i.pinimg.com/originals/2a/53/65/2a53651a35816f499270d8275fd5318f.gif" alt="">
+                                <img class="img-fluid" src="https://digitalscholar.in/wp-content/uploads/2022/06/benefits-of-google-my-business.gif" alt="">
+                            </div>
+                        </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+        <a href="https://api.whatsapp.com/send?phone=8999370651&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." target="_blank" class="whatsapp_float"><i class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+
+
+            <!--call btn-->
+              <!--calll bbtn-->
+              <a href="tel:+91-8770839703" class="floating-button">Call Now</a>
+              <!--button end-->
+        
+
+        <!-- About Start -->
+        <div class="container-xxl py-5"  id="about">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="https://blog.educationnest.com/wp-content/uploads/2023/05/Digital-Marketing.gif" style="width:300%;">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Milestone Technologies</h5>
+                        <h1 class="mb-4">Discover More About Us</h1>
+                        <p class="mb-4">Milestone Technologies is a Digital Marketing & Web Development Agency  Nagpur that focuses on quality, 
+                            innovation, Google-My-Buisness , Google ADS or  Google Maps & speed. We utilized technology to bring results to grow our clients businesses.
+                             We pride ourselves in great work ethic, integrity, and end-results. Throughout the years Milestone Technologies has been able to create stunning designs 
+                            in multiple verticals while allowing our clients to obtain an overall better web presence</p>
+                            <div class="row g-4 mb-4">
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="d-flex">
+                                        <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
+                                        <div class="ms-3">
+                                            <h2 class="mb-0" data-toggle="counter-up">10234</h2>
+                                            <p class="text-primary-gradient mb-0">Client</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="d-flex">
+                                        <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
+                                        <div class="ms-3">
+                                            <h2 class="mb-0" data-toggle="counter-up">10234</h2>
+                                            <p class="text-secondary-gradient mb-0">Clients Reviews</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="aboutus.html" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- About End -->
+        
+       <!-- Features Start -->
+        <div class="container-xxl py-5" id="feature">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Milestone Technologies Nagpur</h5>
+                    <h1 class="mb-5">Service Expertise & Features For Your Buisness</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <img src="img/g-business-logo-unscreen.gif" width="100">
+                            </div>
+                            <h5 class="mb-3">Google My Buisness</h5>
+                            <p class="m-0">
+                                Milestone Technologies  Grow Your Buisness Google My Business is a free tool offered by Google that helps businesses manage their online presence across Google, including Search </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <img src="https://parkyddigital.com/img/service%20digital%20marketing%20agency%20toronto.gif" width="80">
+                            </div>
+                            <h5 class="mb-3">Digital Marketing</h5>
+                            <p class="m-0">
+                                Digital marketing encompasses a wide range of strategies and tactics used to 
+                                promote products or services using digital channels. Here are some key components:.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <img src="https://v1technologies.co.uk/images/google-ads-services.gif" width="80">
+                            </div>
+                            <h5 class="mb-3">Google ADS</h5>
+                            <p class="m-0">Google Ads to promote your business, help sell 
+                                services or products, raise awareness, and increase traffic t your website..</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <img src="https://i.pinimg.com/originals/32/88/2d/32882dbcd4424eb8e814ce8e62e68361.gif" width="70">
+
+                            </div>
+                            <h5 class="mb-3">Google Virtual Tour</h5>
+                            <p class="m-0">
+                                A Google tour gives a 360° view of your business. 
+                                Which lets users engage and connect to your business </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <img src="https://v1technologies.co.uk/images/google-ads-services.gif" width="80">
+
+
+                            </div>
+                            <h5 class="mb-3">Google AdSence</h5>
+                            <p class="m-0">
+                                Google AdSense provides a way for creators to earn money from their content 
+                                on digital platforms and web..</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded p-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle mb-4" style="width: 60px; height: 60px;">
+                                <img src="https://i.gifer.com/yy3.gif" width="80">
+                            </div>
+                            <h5 class="mb-3">Graphic Designing </h5>
+                            <p class="m-0"> Milestone Technologies Graphic Designer Improve your buisness Graphic designers create visual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features End -->
+
+
+        <!-- Screenshot Start -->
+        <div class="container-xxl py-5" id="service">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                        <h5 class="text-primary-gradient fw-medium">Milestone Technologies</h5>
+                        <h1 class="mb-4">
+                            More About Us</h1>
+                        <p class="mb-4">We will help you to achieve your goals and to grow your business.</p>
+                        <p><i class="fa-solid fa-shop fa-fade" style="color: #0057fa;"></i>
+                            Google-My-Business</p>
+                        <p><i class="fa-solid fa-bullhorn fa-fade" style="color: #0c5be4;"></i>
+                            Digital Markeing</p>
+                        <p class="mb-4"><i class="fa-solid fa-laptop-code fa-fade" style="color: #0c5be4;"></i>
+                            Web Developer</p>
+                            <p class="mb-4"><i class="fa-solid fa-pen-nib fa-fade" style="color: #0557e6;"></i>
+                                Graphic Designer</p>
+                        <a href="./about/about2.html" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="owl-carousel screenshot-carousel">
+                            <img class="img-fluid" src="https://images.fonearena.com/blog/wp-content/uploads/2023/09/Meta-AI-Generative-Features.gif" alt="">
+                            <img class="img-fluid" src="https://cdn.dribbble.com/users/1124806/screenshots/4860159/ezgif.com-optimize.gif" alt="">
+                            <img class="img-fluid" src="https://sparkwavegroup.com/wp-content/uploads/2022/08/App-development122-1-1.gif" alt="">
+                            <img class="img-fluid" src="https://cdn.dribbble.com/users/997070/screenshots/3160801/google-business.gif" alt="">
+                            <img class="img-fluid" src="https://cdn.dribbble.com/users/2256783/screenshots/10769871/media/7ed3a8055730a512ebaf59428cb12227.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Screenshot End -->
+        <!-- Process Start-->
+        <div class="container-xxl py-5" id="blog">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Milestone Technologies</h5>
+                    <h1 class="mb-5">4 Easy Steps Grow Your Buisness</h1>
+                </div>
+                <div class="row gy-5 gx-4 justify-content-center">
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <img src="img/g-business-logo-unscreen.gif" width="150">
+                            </div>
+                            <h5 class="mt-4 mb-3">Google-My-Buisness</h5>
+                            <p class="mb-0">MileStone Technologies Crete Your Buisness Grow.GMB allows businesses to create a listing that appears when people search for their business or related keywords on Google Search and Maps.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <img src="https://cdn-lhalb.nitrocdn.com/GUKyUHlVnRTXLBhjipzpWxaqlUzloLOa/assets/images/optimized/rev-72549b5/www.zellusmarketing.com/wp-content/uploads/2021/02/Brb-gif.gif" width="150">
+                            </div>
+                            <h5 class="mt-4 mb-3">Digital Marketing</h5>
+                            <p class="mb-0">Started Your Buisness With Milestone Technologies Digital Agency.Creating and distributing valuable, relevant content to attract and engage a target audience. Content can include blog posts, articles, videos, infographics, ebooks, and more. </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <img src="https://www.zartis.com/wp-content/uploads/2021/08/modern-software-development.gif" width="130">
+
+                            </div>
+                            <h5 class="mt-4 mb-3">Software & 
+                            Wordpress Developer</h5>
+                            <p class="mb-0">Milestone Technologies create your Buisness Website And Grow Your Buisness.Developers need strong problem-solving skills to analyze complex technical issues and find effective solutions.</div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
+                            <div class="d-inline-flex align-items-center justify-content-center  rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                                <img src="https://media0.giphy.com/media/oXAhJPV1n60fa37YST/giphy.gif?cid=6c09b952sdza497icvf8zug8nrdqqb7jupsy3a6inyhvylay&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" width="130">
+                            </div>
+                            <h5 class="mt-4 mb-3">Graphic designers</h5>
+                            <p class="mb-0">Milestone Technologies Create Buisness Logo.For print projects, graphic designers prepare files for printing, ensuring that colors, resolution, and dimensions meet printing requirements and standards.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Process Start -->
+        
+
+
+        <!-- Download Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="https://cdn.dribbble.com/users/952682/screenshots/4489624/apigee_puzzle.gif" style="width:300%;">
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <h5 class="text-primary-gradient fw-medium">Milestone Technologies</h5>
+                        <h1 class="mb-4">Most Frequently Asked Questions ?
+                        </h1>
+                        <p class="mb-4">The most frequently asked questions (FAQs) can vary depending on the industry, product, or service. However, here are some common ones across different domains:</p>
+                        <div class="row g-4">
+                           <!-- <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                    <div class="ms-3">
+                                        <p class="text-white mb-0">Available On</p>
+                                        <h5 class="text-white mb-0">App Store</h5
+                                    </div>
+                                </a>
+                            </div>-->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Download End -->
+          <h5 class="text-primary-gradient fw-medium" style="text-align: center;">Milestone Technologies</h5>
+          <h1 class="mb-4" style="text-align: center;">Stay Updated With Our Latest Blog
+           </h1>
+       
+        <div class="container__cards">
+                <div class="card">
+                <div class="cover">
+                    <img src="https://i.gifer.com/EYuG.gif" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    <h2>HOW GOOGLE MAP WORKS</h2>
+                    <p>Ever wondered how with the help of Google we are able to reach exact location? True to its whole term, we get the exact 'roadmap' of the places we may or may not want to go. How is the data so accurate that we are able to get the sub elements of that route which include geography, locations businesses nearby, traffic highlights, traffic signs.</p>
+                    
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="cover">
+                    <img src="https://cdn.dribbble.com/users/231139/screenshots/10949135/media/69183a206b784033125f680485b19dfa.gif" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    <h2>SOCIAL MEDIA TRENDS</h2>
+                    <p>With social media being the centre of the world trends for over a decade now, people have really found their ways to monetize their passions through social media. Google is thriving to become yet another social media platform like Instagram, Facebook or Twitter with it's latest trend of web stories and many more.
+                    </p>
+                    
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="cover">
+                    <img src="https://biztraffics.com/assets/imgs/marketing.gif" alt="">
+                    <div class="img__back"></div>
+                </div>
+                <div class="description">
+                    
+                    <h2>IMPORTANCE OF DIGITAL MARKETING</h2>
+                    <p>Digital marketing is a boon in today's generation where everything is colonized on web and internet. With the world being rapidly adaptive to new concepts of internet, digital marketing has led to innovation in the perception of the people.</p>
+                    
+                </div>
+            </div>
+    
+        </div><br><br><br>
+         <!--Slider code -->
+         <div class="slider">
+            <div class="slider-items">
+                <img src="images/logo2.jpg"
+                alt="">
+                <img src="images/logo1.jpg"
+                alt="">
+                <img src="images/logo11.jpg"
+                alt="">
+                <img src="images/logo12.jpg"
+                alt="">
+                <img src="images/logo13.jpg"
+                alt="">
+                <img src="images/logo14.jpg" 
+                alt="">
+                <img src="images/logo2.jpg"
+                 alt="">
+                <img src="images/logo3.jpg"
+                alt="">
+                <img src="images/logo4.jpg"
+                alt="">
+                <img src="images/logo5.png"
+                 alt="">
+                <img src="images/logo6.jpg"
+                 alt="">
+                <img src="images/logo7.jpg"
+                alt="">
+                <img src="images/logo8.jpg" 
+                alt="">
+                <img src="images/logo9.jpg"
+                alt="">
+            </div>
+        </div>
+        <br><br>
+
+         <!--Slider code End -->
+        <!-- blogs -->
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5 class="text-primary-gradient fw-medium">Lets Get Started Milestone Technologies & Teams</h5>
+            <h1 class="mb-5">Milestone Technologies Founder & Manager </h1>
+        </div>
+        <div class="container" class="align-items-center">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="img/w3.jpg" alt="">
+                        <div class="team-content">
+                            <h3 class="title">Atul Thakur </h3>
+                            <span class="post">Company Founder</span>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="img/WhatsApp Image 2024-06-17 at 13.00.15_df2fa17b.jpg" alt="">
+                        <div class="team-content">
+                            <h3 class="title">Narendra Pratap</h3>
+                            <span class="post">Company Founder</span>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-3 col-sm-6">
+                    <div class="our-team">
+                        <img src="img/jatin.jpg" alt="">
+                        <div class="team-content">
+                            <h3 class="title">Jatin Dongre</h3>
+                            <span class="post">Company Manager</span>
+                            <ul class="social-links">
+                                <li><a href="#"><i class="fab fa-facebook"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-google-plus"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-linkedin"></i> </a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pricing End -->
+        
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5" id="review">
+            <div class="container py-5 px-lg-5" id="team">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Lets Get Started Milestone Technologies & Teams</h5>
+                    <h1 class="mb-5">Milestone Technologies Teams</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Rasika</h5>
+                                <p class="mb-1">Human Resources</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Kalyani</h5>
+                                <p class="mb-1">Senior Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Varsha</h5>
+                                <p class="mb-1">Senior Tele-Marketing</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Tejaswini</h5>
+                                <p class="mb-1">Junior Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Mira</h5>
+                                <p class="mb-1">Junior Tele-Marketing</p>
+                            </div>
+                        </div>
+                
+                    </div>
+
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (7).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Rohit</h5>
+                                <p class="mb-1"> Junior Digital Marketing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Megha</h5>
+                                <p class="mb-1">Wordpress Developer</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (8).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Roshni</h5>
+                                <p class="mb-1">Junior Graphic Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    <div class="testimonial-item rounded p-4">
+                        <div class="d-flex align-items-center mb-4">
+                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="images/Untitled design (7).png" style="width: 85px; height: 85px;">
+                            <div class="ms-4">
+                                <h5 class="mb-1">Suraj</h5>
+                                <p class="mb-1">Business Development Executive</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+            <div class="container py-5 px-lg-5" id="contact">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    
+                    <h5 class="text-primary-gradient fw-medium">Contact Us</h5>
+                    <h1 class="mb-5">Get In Touch!</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                           <!--<p class="text-center mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>-->
+                            <form  action="https://formspree.io/f/moqggkwk"
+                            method="POST">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text"  name="name" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" name= "subject" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" name=""  placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        <br><br>
+                        <div class="rounded h-100">
+                            <iframe class="rounded w-100" 
+                            style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14908.26301270974!2d77.7511492!3d20.9096741!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a584a596f133%3A0xc8fa0f3021cc86cb!2sSukhakarta%20Urology%20%26%20Maternity%20Hospital!5e0!3m2!1sen!2sin!4v1719044140398!5m2!1sen!2sin" 
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Address</h4>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Trimurti Nager Nagpur </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+91-8770839703</p>
+                        <p><i class="fa fa-envelope me-3"></i>
+                            info@milestonetechnologies.co.in</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="//www.facebook.com/milestonetechnologiesnagpur"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/milestonetechnologiesnagpur/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Quick Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+                  
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Popular Link</h4>
+                        <a class="btn btn-link" href="">About Us</a>
+                        <a class="btn btn-link" href="">Contact Us</a>
+                        <a class="btn btn-link" href="">Privacy Policy</a>
+                        <a class="btn btn-link" href="">Terms & Condition</a>
+          
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class="text-white mb-4">Newsletter</h4>
+                        <p>Our company philosophy is to create the kind of website that most businesses want: easy to find, stylish and appealing, quick loading, mobile responsive and easy to buy from.</p>
+                        <div class="position-relative w-100 mt-3">
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+        <!-- Back to Top -->
+            </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
